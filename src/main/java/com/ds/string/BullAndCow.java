@@ -21,7 +21,7 @@ import java.util.Map;
  * use A to indicate the bulls and B to indicate the cows. In the above example,
  * your function should return "1A3B".
  * 
- * @author m808414
+ * @author Rajesh Bhoopathy Raju
  *
  */
 public class BullAndCow {

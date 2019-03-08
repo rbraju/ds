@@ -9,7 +9,7 @@ public class MirrorImage {
 
 	public static void main(String[] args) {
 
-		int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 };
 		TreeNode root = ArrayToBst.getBinarySearchTree(a);
 
 		BinarySearchTreeUtil.displayLevelOrder(root);
@@ -21,14 +21,15 @@ public class MirrorImage {
 
 	}
 
-	private static void convertToMirrorImage(TreeNode root) {
-		if (root == null)
+	private static void convertToMirrorImage(TreeNode node) {
+		if (node == null)
 			return;
 
-		TreeNode temp = root.left;
-		root.left = root.right;
-		root.right = temp;
-		convertToMirrorImage(root.left);
-		convertToMirrorImage(root.right);
+		TreeNode temp = node.left;
+		node.left = node.right;
+		node.right = temp;
+		
+		convertToMirrorImage(node.left);
+		convertToMirrorImage(node.right);
 	}
 }

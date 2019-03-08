@@ -3,7 +3,7 @@ package com.ds.linkedlist;
 /**
  * Find whether a given list is circular or not. Find the node.
  * 
- * @author m808414
+ * @author Rajesh Bhoopathy Raju
  *
  */
 public class CircularLinkedList {

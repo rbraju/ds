@@ -13,7 +13,7 @@ import java.util.Set;
  * @author Rajesh Bhoopathy Raju
  * 
  */
-public class FindLongestSubstringWithUniqueCharacters {
+public class LongestSubstringWithUniqueChars {
 
 	public static void main(String[] args) {
 

@@ -18,7 +18,7 @@ public class ArrayToBst {
 	private static BinarySearchTree bst = null;
 
 	public static void main(String[] args) {
-		
+
 		int[] a = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110 };
 
 		BinarySearchTreeUtil.displayLevelOrder(getBinarySearchTree(a));
@@ -42,8 +42,8 @@ public class ArrayToBst {
 	/**
 	 * Converts the given SORTED array to a binary search tree<br>
 	 * <br>
-	 * Print the middle element of the array. Recursively print the middle
-	 * element of left and right sub arrays.
+	 * Print the middle element of the array. Recursively print the middle element
+	 * of left and right sub arrays.
 	 * 
 	 * @param a
 	 *            Sorted Integer array
