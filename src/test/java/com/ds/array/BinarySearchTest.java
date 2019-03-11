@@ -20,7 +20,13 @@ public class BinarySearchTest {
 	}
 
 	@Test
-	public void numberNotInRange() {
+	public void numberLessThanRange() {
+		int[] a = { 0, 10, 20, 30, 40, 50, 60, 70, 80 };
+		assertEquals(-1, search.getIndex(a, -122));
+	}
+
+	@Test
+	public void numberGreaterThanRange() {
 		int[] a = { 0, 10, 20, 30, 40, 50, 60, 70, 80 };
 		assertEquals(-1, search.getIndex(a, 99));
 	}

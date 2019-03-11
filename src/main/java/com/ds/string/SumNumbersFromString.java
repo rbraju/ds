@@ -3,7 +3,9 @@ package com.ds.string;
 public class SumNumbersFromString {
 
 	public int process(String str) {
-		// String str = "raj--esh--86+rajesh86-jp84+ravi-84+x-2-8-";
+
+		if (str == null)
+			return 0;
 
 		char[] ch = str.toCharArray();
 

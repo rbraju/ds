@@ -35,10 +35,4 @@ public class BinarySearch {
 		else
 			return -1;
 	}
-
-	public static void main(String[] args) {
-		BinarySearch search = new BinarySearch();
-		int[] a = { 10, 12, 14, 18, 22, 29, 32, 55, 74, 85, 91 };
-		System.out.println(search.getIndex(a, 29));
-	}
 }

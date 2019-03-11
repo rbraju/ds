@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.Arrays;
 import java.util.List;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 public class AnagramTest {
 
@@ -32,5 +32,10 @@ public class AnagramTest {
 	@Test
 	public void nullString() {
 		assertEquals(null, anagram.getAnagrams(null));
+	}
+
+	@Test
+	public void emptyString() {
+		assertEquals(null, anagram.getAnagrams(""));
 	}
 }
