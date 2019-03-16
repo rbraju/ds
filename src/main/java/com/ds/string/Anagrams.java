@@ -9,13 +9,13 @@ import java.util.Map;
  */
 public class Anagrams {
 
-	public static void main(String[] args) {
+	public boolean checkAnagram(String str1, String str2) {
 
-		String str1 = "TRIANGLE_T_XXA";
-		String str2 = "INTEGRAL_X_AXT";
+		if (str1.length() != str2.length())
+			return false;
 
 		Map<Character, Integer> map = new HashMap<Character, Integer>();
-
+		boolean isAnagram = false;
 		int count = 0;
 
 		for (char ch : str1.toCharArray()) {
@@ -25,12 +25,10 @@ public class Anagrams {
 				map.put(ch, map.get(ch) + 1);
 			}
 		}
-		
-		System.out.println(map);
 
 		for (char c : str2.toCharArray()) {
 			if (map.get(c) == null) {
-				System.out.println("Not an anagram");
+				isAnagram = false;
 				break;
 			} else {
 				count = map.get(c);
@@ -41,9 +39,10 @@ public class Anagrams {
 				}
 			}
 		}
-		System.out.println(map);
 
 		if (map.isEmpty())
-			System.out.println("Anagram !");
+			isAnagram = true;
+		
+		return isAnagram;
 	}
 }
