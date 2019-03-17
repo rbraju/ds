@@ -10,7 +10,6 @@ public class FindRangeTest {
 
 	@Test
 	public void nullArray() {
-		int[] a = { 1, 1, 2, 3, 3, 3, 5, 5, 5, 5, 5, 7, 7, 9, 9, 11, 11 };
 		int[] range = fr.getRange(null, 4);
 		Assert.assertNull(range);
 	}
