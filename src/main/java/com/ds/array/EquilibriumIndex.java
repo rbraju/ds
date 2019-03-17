@@ -1,7 +1,5 @@
 package com.ds.array;
 
-import java.util.Arrays;
-
 /**
  * Given an unsorted array with integers, find the array index or position where
  * sum of numbers preceding the index is equals to sum of numbers succeeding the
