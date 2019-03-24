@@ -21,9 +21,9 @@ public class CheckoutRegister implements Subject {
 
 	@Override
 	public void notifyObserver() {
-		System.out.println("Total customers : " + customers.size());
+		System.out.println("Total customers in line : " + customers.size());
 		if (!customers.isEmpty()) {
-			System.out.println("Notifying customer " + customers.get(0));
+			System.out.println("Register is open for " + customers.get(0));
 			customers.get(0).update(this);
 		}
 	}

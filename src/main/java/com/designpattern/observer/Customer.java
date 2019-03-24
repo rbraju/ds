@@ -15,7 +15,6 @@ public class Customer implements Observer {
 	@Override
 	public void update(Object o) {
 		if (o instanceof CheckoutRegister && ((CheckoutRegister) o).getStatus().equals("OPEN")) {
-			System.out.println("Register is free.." + id);
 			((CheckoutRegister) o).checkout(this);
 		}
 	}
