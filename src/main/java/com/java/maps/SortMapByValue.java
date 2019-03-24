@@ -1,4 +1,4 @@
-package com.ds.java.maps;
+package com.java.maps;
 
 import java.util.ArrayList;
 import java.util.Collections;

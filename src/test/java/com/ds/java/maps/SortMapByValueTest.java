@@ -6,6 +6,9 @@ import java.util.Map;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.java.maps.Player;
+import com.java.maps.SortMapByValue;
+
 public class SortMapByValueTest {
 
 	private static final SortMapByValue sort = new SortMapByValue();

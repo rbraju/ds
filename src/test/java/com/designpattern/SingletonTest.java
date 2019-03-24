@@ -7,6 +7,8 @@ import java.lang.reflect.InvocationTargetException;
 
 import org.testng.annotations.Test;
 
+import com.designpattern.singleton.Singleton;
+
 public class SingletonTest {
 
 	@Test
