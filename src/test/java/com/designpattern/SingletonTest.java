@@ -20,7 +20,7 @@ public class SingletonTest {
 
 	@Test(expectedExceptions = InvocationTargetException.class)
 	public void violateSingletonPattern() throws Exception {
-		Class<?> c = Class.forName("com.designpattern.Singleton");
+		Class<?> c = Class.forName("com.designpattern.singleton.Singleton");
 		Constructor<?> constructor = c.getDeclaredConstructor();
 		constructor.setAccessible(true);
 		Singleton s2 = (Singleton) constructor.newInstance();
